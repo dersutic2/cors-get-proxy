@@ -4,7 +4,7 @@ addEventListener('fetch', event => {
     const request = event.request;
 
     if (request.method !== "GET") {
-      const responseMessage = "This is a GET only cors proxy. See https://github.com/SirJosh3917/cors-get-proxy";
+      const responseMessage = "This is a GET only cors proxy. See https://github.com/dersutic2/cors-get-proxy";
       
       return new Response(responseMessage, {
         status: 405,
@@ -18,9 +18,9 @@ addEventListener('fetch', event => {
 
     if (targetUrl === null) {
       const responseMessage =
-        "Bad usage! http://cors-get-proxy.sirjosh.workers.dev/?url=<put the url here>\n" +
+        "Bad usage! https://parliamentary-sonnie-rusticotv.koyeb.app/?url=<put the url here>\n" +
         "Repo at https://github.com/SirJosh3917/cors-get-proxy\n" +
-        "2022-05-26 update: Added `cors-get-proxy.sirjosh.workers.dev` to the User-Agent of this service.";
+        "2022-05-26 update: Added `parliamentary-sonnie-rusticotv.koyeb.app` to the User-Agent of this service.";
 
       return new Response(responseMessage, {
         status: 400
